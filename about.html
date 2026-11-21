@@ -3,41 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Fashion & Premium Products</title>
+  <title> Fabbro</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-stone-50 text-gray-900">
 
-  <!-- Top Navigation Bar -->
-    <header class="bg-white border-b sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
-      <a href="index.html" class="text-2xl font-serif font-bold tracking-wide">shopify</a>
+  <!-- Top Bar
+  <div class="bg-black text-white text-xs text-center py-2 tracking-wider">
+    FASHION & PREMIUM PRODUCTS • FREE DELIVERY ABOVE ₹2,999
+  </div> -->
 
-      <nav class="flex flex-wrap items-center gap-20 text-sm font-medium justify-between">
-        <a href="index.html" class="text-black font-bold border-b-2 border-black pb-1">Home</a>
+  <!-- Top Navigation Bar -->
+  <header class="bg-white border-b sticky top-0 z-50 p-20px p-3 sm:p-5">
+    <div class="max-w-7xl mx-auto px-4  flex flex-wrap items-center  justify-between gap-80px mb-3">
+       <a href="index.html" class="flex items-center gap-3">
+      <img class="w-8 h-8 object-contain" src="https://img.icons8.com/ios-filled/50/shopaholic.png" alt="shopaholic">
+      <span class="text-2xl font-serif font-bold tracking-wide text-black">Fabbro</span>
+    </a>
+    
+      <nav class="flex flex-wrap items-center gap-2.5 sm:gap-5 text-xs sm:tevt-sm text-sm font-medium p-2 justify-between">
+        <a href="index.html"  class="text-gray-600 hover:text-black">Home</a>
         <a href="collection.html" class="text-gray-600 hover:text-black">Collections</a>
         <a href="product.html" class="text-gray-600 hover:text-black">Product Details</a>
         <a href="wishlist.html" class="text-gray-600 hover:text-black">Wishlist (<span id="wishCount">0</span>)</a>
         <a href="cart.html" class="text-gray-600 hover:text-black">Cart (<span id="cartCount">0</span>)</a>
         <a href="about.html" class="text-gray-600 hover:text-black">About</a>
-        <a href="user-page.html" class="text-gray-600 hover:text-black">User Page</a>
+        <a href="contact.html" class="text-gray-600 hover:text-black">Contact</a>
         <a href="login.html" class="bg-black text-white px-3 py-1.5 rounded text-xs">Login</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-10">
-    <div class="bg-white p-8 rounded-2xl border space-y-4">
-      <span class="text-xs uppercase font-bold text-gray-400">About Us</span>
-      <h1 class="text-3xl font-serif font-bold">Fashion & Premium Products</h1>
-      <p class="text-sm text-gray-600 leading-relaxed">
-        We bring together stylish dresses, smartphones, comfort slippers, classic watches, and bags under one clean shopping experience.
-      </p>
-      <p class="text-sm text-gray-600 leading-relaxed">
-        Built collaboratively with HTML, CSS, Tailwind CSS, and JavaScript across five dedicated modules.
-      </p>
+  <!-- Hero Banner -->
+  <section class="max-w-7xl mx-auto px-4 py-6">
+    <div class="hero-box rounded-2xl p-8 md:p-14 text-white flex flex-col justify-between min-h-[320px]">
+      <span class="bg-amber-400 text-black text-xs font-bold px-3 py-1 rounded-full w-fit">PREMIUM COLLECTION</span>
+      <div class="max-w-xl my-4">
+        <h1 class="text-3xl md:text-5xl font-serif font-bold mb-3">Fashion & Premium Essentials</h1>
+        <p class="text-sm md:text-base text-gray-200">Explore curated dresses, mobiles, slippers, watches, and bags in one place.</p>
+      </div>
+      <div class="flex gap-3">
+        <a href="collection.html" class="bg-white text-black px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-gray-200">Shop Collections</a>
+        <a href="about.html" class="border border-white text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/10">About Us</a>
+      </div>
     </div>
-  </main>
+  </section>
 
+  <!-- Category Quick Links -->
+  <section class="max-w-7xl mx-auto px-4 py-4">
+    <h2 class="text-xl font-bold mb-4">Categories</h2>
+    <div id="homeCategories" class="grid grid-cols-2 sm:grid-cols-5 gap-4"></div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Featured Products</h2>
+      <a href="collection.html" class="text-sm font-semibold underline">View All 50 Products →</a>
+    </div>
+    <div id="homeProducts" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"></div>
+  </section>
+
+
+   <!-- FOOTER SECTION -->
+    <footer class="bg-stone-900 text-gray-200 text-xs mt-auto border-t border-redius-300">
+        <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div>
+                <h4 class="text-gray-300 font-bold uppercase mb-3 text-[11px]">ABOUT</h4>
+                <ul class="space-y-1.5">
+                    <li><a href="login.html" class="hover:underline">Contact Us</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="product.html" class="hover:underline">product</a></li>
+                    <li><a href="cart.html" class="hover:underline">cart Stories</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-gray-300 font-bold uppercase mb-3 text-[11px]">HELP</h4>
+                <ul class="space-y-1.5">
+                    <li><a href="login.html" class="hover:underline">Payments</a></li>
+                    <li><a href="product.html" class="hover:underline">Shipping</a></li>
+                    <li><a href="cart.html" class="hover:underline">Cancellation & Returns</a></li>
+                    <li><a href="about.html" class="hover:underline">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-gray-300 font-bold uppercase mb-3 text-[11px]">CONSUMER POLICY</h4>
+                <ul class="space-y-1.5">
+                    <li><a href="#" class="hover:underline">Return Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Use</a></li>
+                    <li><a href="#" class="hover:underline">Security</a></li>
+                    <li><a href="#" class="hover:underline">Privacy</a></li>
+                </ul>
+            </div>
+            <div>
+                
+  <script src="product-date.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>
