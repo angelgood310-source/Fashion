@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabbro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-gray-900">
+
+  <!-- Top Navigation Bar -->
+      <header class="bg-white border-b sticky top-0 z-50 p-20px p-3 sm:p-5">
+    <div class="max-w-7xl mx-auto px-4  flex flex-wrap items-center  justify-between gap-80px mb-3">
+       <a href="index.html" class="flex items-center gap-3">
+      <img class="w-8 h-8 object-contain" src="https://img.icons8.com/ios-filled/50/shopaholic.png" alt="shopaholic">
+      <span class="text-2xl font-serif font-bold tracking-wide text-black">Fabbro</span>
+    </a>
+    
+      <nav class="flex flex-wrap items-center gap-2.5 sm:gap-5 text-xs sm:tevt-sm text-sm font-medium p-2 justify-between">
+        <a href="index.html"  class="text-gray-600 hover:text-black">Home</a>
+        <a href="collection.html" class="text-gray-600 hover:text-black">Collections</a>
+        <a href="product.html" class="text-gray-600 hover:text-black">Product Details</a>
+        <a href="wishlist.html" class="text-gray-600 hover:text-black">Wishlist (<span id="wishCount">0</span>)</a>
+        <a href="cart.html" class="text-gray-600 hover:text-black">Cart (<span id="cartCount">0</span>)</a>
+        <a href="about.html" class="text-gray-600 hover:text-black">About</a>
+        <a href="contact.html" class="text-gray-600 hover:text-black">Contact</a>
+        <a href="login.html" class="bg-black text-white px-3 py-1.5 rounded text-xs">Login</a>
+      </nav>
+    </div>
+  </header>
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <div class="bg-white p-8 rounded-2xl border space-y-4">
+      <span class="text-xs uppercase font-bold text-gray-400">About Us</span>
+      <h1 class="text-3xl font-serif font-bold">Fashion & Premium Products</h1>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        We bring together stylish dresses, smartphones, comfort slippers, classic watches, and bags under one clean shopping experience.
+      </p>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        Built collaboratively with HTML, CSS, Tailwind CSS, and JavaScript across five dedicated modules.
+      </p>
+      <p>
+        👕 Silhouette & Cuts
+Oversized Boxy Fit: Dropped shoulders and wide-cut silhouettes deliver an edgy streetwear look.
+
+Asymmetrical Hemlines: Uneven, fluid cuts resemble shifting symbiote forms.
+
+Raglan Sleeves: Ergonomic raglan sleeve cuts enhance mobility and athletic aesthetic.
+
+High-Neck Hoodies: Deep funnel-neck or cowl-neck hoods partially conceal the lower face.
+
+Distressed Edges: Raw, frayed, or shredded hems echo the torn, organic nature of the symbiote.
+      </p>
+      <p>
+        🖌️ Prints & Graphic Art
+Giant Back Spider Graphic: An enlarged, stylized symbiote spider stretching across the upper back.
+
+Drip & Tendril Prints: Screen-printed graphics featuring liquid drops and reaching vines/tendrils.
+
+3D Puff Printing: Raised puff or flock prints bring the chest logo and eye outlines to life.
+
+Gloss-on-Matte Screen Print: High-gloss transparent ink printed over matte black fabric for subtle texture.
+
+Split-Canvas Graphics: Half-and-half designs depicting a standard portrait transforming into Venom.
+      </p>
+      <p>
+
+🧥 Tops, Outerwear & Jackets
+Varsity Jackets: Black body with white leather sleeves and embroidered Venom chest patches.
+
+Tactical Vests: Black utility vests equipped with matte hardware, webbing, and multiple pockets.
+
+Cropped Venom Hoodies: Modern cropped silhouettes designed for streetwear collections.
+
+Longline Trench Coats: Animatronic-inspired dark coats crafted from coated canvas or faux leather.
+
+Reflective Windbreakers: Weather-resistant jackets featuring reflective 3M Venom logos for night visibility.
+</p>
+<p>
+👖 Bottomwear
+Multi-Pocket Cargo Pants: Black tactical cargos with dangling straps and utility buckled pockets.
+
+Stacked Black Denim: Slim-fit black jeans tailored extra long to create a stacked ankle aesthetic.
+
+Side-Tendril Trackpants: Classic side-stripe trackpants replaced with liquid tendril patterns.
+
+Acid-Washed Joggers: Charcoal black wash providing a grimy, worn-in texture.
+
+Utility Streetwear Shorts: Relaxed-fit cargo shorts designed for heavy layering.
+</p>
+<p>
+👟 Accessories & Details
+Built-in Face Masks: Hoodies designed with integrated lower-face gaiters or snout-style masks.
+
+Chunky Black Sneakers: Thick-soled "dad shoes" or futuristic high-top black-and-white sneakers.
+
+Webbed Utility Belts: Extended nylon webbed belts with quick-release tactical buckles.
+
+Embroidered Beanies: Black knit beanies embroidered with Venom's sharp white eye shape.
+
+Dark Chrome Chains: Black metal or dark chrome hardware hanging from pants and jackets.
+</p>
+<p>
+
+✂️ Tailoring & Construction Details
+Exposed White Stitching: Contrast flat-lock stitching accentuates seam structures on black fabric.
+
+Thumbhole Cuffs: Extended ribbing with integrated thumbholes for a sleek, glove-like feel.
+
+Modular Sleeves: Zippered detachable sleeves that transform jackets into utility vests.
+
+Embossed Patterns: Heat-embossed textures pressed directly into synthetic fabrics.
+
+Fake Layered Sleeves: Double-sleeve construction creating an instant layered look.
+</p>
+<p>
+
+💡 Modern Trends & Styling
+Monochrome Minimalism: Clean, subtle designs featuring only tiny, sharp eye logos for everyday wear.
+
+Gothic-Streetwear Fusion: Combining dark gothic motifs with relaxed athletic shapes.
+
+Liquid Metal Hardware: Custom zippers and buttons designed in organic, fluid metal shapes.
+
+Dark Floral Contrast: Merging realistic rose graphics entangled with black symbiote tendrils.
+
+Functional Techwear: Water-resistant fabrics, magnetic closures, and hidden storage pockets.
+</p>
+<p>
+🎯 Portfolio & Collection Presentation
+High-Contrast Photography: Photoshoots staged with dark backgrounds and dramatic neon backlighting.
+
+Unisex Appeal: Gender-neutral fits tailored to suit all body types effortlessly.
+
+Wearable Cosplay: Balancing fantasy elements with practical, daily streetwear usability.
+
+Sustainable Tech Fabrics: Incorporating recycled polyester and organic heavy-grade cottons.
+
+Capsule Drops: Marketing the line as a limited-edition "Symbiote Capsule Collection."
+</p>
+    </div>
+  </main>
+
+</body>
+</html>

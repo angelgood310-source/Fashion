@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabbro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="collection.css">
+</head>
+<body class="bg-stone-50 text-gray-900">
+
+  <!-- Top Navigation Bar -->
+      <header class="bg-white border-b sticky top-0 z-50 p-20px p-3 sm:p-5">
+    <div class="max-w-7xl mx-auto px-4  flex flex-wrap items-center  justify-between gap-80px mb-3">
+       <a href="index.html" class="flex items-center gap-3">
+      <img class="w-8 h-8 object-contain" src="https://img.icons8.com/ios-filled/50/shopaholic.png" alt="shopaholic">
+      <span class="text-2xl font-serif font-bold tracking-wide text-black">Fabbro</span>
+    </a>
+    
+      <nav class="flex flex-wrap items-center gap-2.5 sm:gap-5 text-xs sm:tevt-sm text-sm font-medium p-2 justify-between">
+        <a href="index.html"  class="text-gray-600 hover:text-black">Home</a>
+        <a href="collection.html" class="text-gray-600 hover:text-black">Collections</a>
+        <a href="product.html" class="text-gray-600 hover:text-black">Product Details</a>
+        <a href="wishlist.html" class="text-gray-600 hover:text-black">Wishlist (<span id="wishCount">0</span>)</a>
+        <a href="cart.html" class="text-gray-600 hover:text-black">Cart (<span id="cartCount">0</span>)</a>
+        <a href="about.html" class="text-gray-600 hover:text-black">About</a>
+        <a href="contact.html" class="text-gray-600 hover:text-black">Contact</a>
+        <a href="login.html" class="bg-black text-white px-3 py-1.5 rounded text-xs">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row gap-6">
+    <!-- Sidebar: Categories Only -->
+    <aside class="w-full md:w-64 bg-white p-4 rounded-xl border h-fit">
+      <h2 class="font-bold text-base mb-3 pb-2 border-b">Categories</h2>
+      <div id="categoryCheckboxes" class="space-y-2 text-sm">
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" class="cat-filter" value="Dresses" checked> Dresses
+        </label>
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" class="cat-filter" value="Mobiles" checked> Mobiles
+        </label>
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" class="cat-filter" value="Slippers" checked> Slippers
+        </label>
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" class="cat-filter" value="Watches" checked> Watches
+        </label>
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" class="cat-filter" value="Bags" checked> Bags
+        </label>
+      </div>
+    </aside>
+
+    <!-- Main Collection Area -->
+    <main class="flex-1">
+      <div class="bg-white p-4 rounded-xl border mb-5 flex flex-wrap items-center justify-between gap-3">
+        <span id="productCount" class="text-sm font-semibold">Showing 50 Products</span>
+        <input type="text" id="searchInput" placeholder="Search dresses, mobiles, slippers..." class="border px-3 py-1.5 rounded-lg text-sm w-full sm:w-64">
+        <select id="sortSelect" class="border px-3 py-1.5 rounded-lg text-sm">
+          <option value="default">Sort: Featured</option>
+          <option value="low-high">Price: Low to High</option>
+          <option value="high-low">Price: High to Low</option>
+        </select>
+      </div>
+
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+      <div id="pagination" class="flex justify-center gap-2 mt-8"></div>
+    </main>
+  </div>
+
+  <script src="product-date.js"></script>
+  <script src="collection.js"></script>
+</body>
+</html>
