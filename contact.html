@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabbro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased">
+
+  
+  <!-- Header -->
+     <header class="bg-white border-b sticky top-0 z-50 p-20px p-3 sm:p-5">
+    <div class="max-w-7xl mx-auto px-4  flex flex-wrap items-center  justify-between gap-80px mb-3">
+       <a href="index.html" class="flex items-center gap-3">
+      <img class="w-8 h-8 object-contain" src="https://img.icons8.com/ios-filled/50/shopaholic.png" alt="shopaholic">
+      <span class="text-2xl font-serif font-bold tracking-wide text-black">Fabbro</span>
+    </a>
+    
+      <nav class="flex flex-wrap items-center gap-2.5 sm:gap-5 text-xs sm:tevt-sm text-sm font-medium p-2 justify-between">
+        <a href="index.html"  class="text-gray-600 hover:text-black">Home</a>
+        <a href="collection.html" class="text-gray-600 hover:text-black">Collections</a>
+        <a href="product.html" class="text-gray-600 hover:text-black">Product Details</a>
+        <a href="wishlist.html" class="text-gray-600 hover:text-black">Wishlist (<span id="wishCount">0</span>)</a>
+        <a href="cart.html" class="text-gray-600 hover:text-black">Cart (<span id="cartCount">0</span>)</a>
+        <a href="about.html" class="text-gray-600 hover:text-black">About</a>
+        <a href="contact.html" class="text-gray-600 hover:text-black">Contact</a>
+        <a href="login.html" class="bg-black text-white px-3 py-1.5 rounded text-xs">Login</a>
+      </nav>
+    </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+    <!-- Hero Section -->
+      <section class="max-w-7xl mx-auto px-4 py-6   from-stone-950 to-stone-800 rounded-2xl mb-10">
+    <div class="hero-box rounded-2xl p-8 md:p-14 text-white flex flex-col justify-between min-h-[320px]">
+      <span class="bg-amber-400 text-black text-xs font-bold px-3 py-1 rounded-full w-fit">PREMIUM COLLECTION</span>
+      <div class="max-w-xl my-4">
+        <h1 class="text-3xl md:text-5xl font-serif font-bold mb-3">Fashion & Premium Essentials</h1>
+        <p class="text-sm md:text-base text-gray-200">Explore curated dresses, mobiles, slippers, watches, and bags in one place.</p>
+      </div>
+      <div class="flex gap-3">
+        <a href="collection.html" class="bg-white text-black px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-gray-200">Shop Collections</a>
+        <a href="about.html" class="border border-white text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/10">About Us</a>
+      </div>
+    </div>
+  </section>
+
+    <!--   Hero Section -->
+    <section class="bg-gray-300 border border-stone-200 rounded-2xl p-6 sm:p-10 shadow-sm">
+      <form id="contactForm" class="space-y-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label for="name" class="block text-xs uppercase tracking-wider text-stone-700 mb-2">Your Name</label>
+            <input id="name" name="name" type="text" required placeholder="Enter your name"
+              class="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:border-stone-900" />
+          </div>
+          <div>
+            <label for="email" class="block text-xs uppercase tracking-wider text-stone-700 mb-2">Email Address</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com"
+              class="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:border-stone-900" />
+          </div>
+        </div>
+
+        <div>
+          <label for="message" class="block text-xs uppercase tracking-wider text-stone-700 mb-2">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Tell us how we can help..."
+            class="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:border-stone-900"></textarea>
+        </div>
+
+        <button type="submit"
+          class="bg-stone-950 text-white text-xs tracking-[0.18em] uppercase px-7 py-3.5 rounded-lg hover:bg-stone-800 transition">
+          Send Note
+        </button>
+ <main class="max-w-4xl mx-auto px-4 py-10">
+    <div class="bg-white p-8 rounded-2xl border space-y-4">
+      <h1 class="text-2xl font-serif font-bold border-b pb-3">User Profile</h1>
+      <p class="text-sm"><strong>Name:</strong> <span id="profileName">Guest User</span></p>
+      <p class="text-sm"><strong>Email:</strong> <span id="profileEmail">guest@example.com</span></p>
+      <p class="text-sm"><strong>Membership:</strong> Premium Member</p>
+      <div class="pt-3 flex gap-3">
+        <a href="cart.html" class="bg-black text-white px-4 py-2 rounded-lg text-xs font-bold">View Cart</a>
+        <a href="wishlist.html" class="border px-4 py-2 rounded-lg text-xs font-bold">View Wishlist</a>
+      </div>
+    </div>
+  </main>
+
+      <!-- Success Status -->
+      <div id="sentStatus" role="status" class="hidden py-6 space-y-2">
+        <p class="text-xs tracking-[0.2em] uppercase text-stone-500">✦ Message Sent</p>
+        <h2 class="font-serif text-2xl sm:text-3xl text-stone-950">
+          Thank you, <em id="senderName" class="italic"></em>.
+        </h2>
+        <p class="text-sm text-stone-600">
+          We’ll reply to <span id="senderEmail" class="font-medium text-stone-900"></span> within one working day.
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER SECTION
+    <footer class="bg-stone-900 text-gray-200 text-xs mt-auto border-t border-redius-300">
+        <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div>
+                <h4 class="text-gray-300 font-bold uppercase mb-3 text-[11px]">ABOUT</h4>
+                <ul class="space-y-1.5">
+                    <li><a href="login.html" class="hover:underline">Contact Us</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="product.html" class="hover:underline">product</a></li>
+                    <li><a href="cart.html" class="hover:underline">cart Stories</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-gray-300 font-bold uppercase mb-3 text-[11px]">HELP</h4>
+                <ul class="space-y-1.5">
+                    <li><a href="login.html" class="hover:underline">Payments</a></li>
+                    <li><a href="product.html" class="hover:underline">Shipping</a></li>
+                    <li><a href="cart.html" class="hover:underline">Cancellation & Returns</a></li>
+                    <li><a href="about.html" class="hover:underline">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-gray-300 font-bold uppercase mb-3 text-[11px]">CONSUMER POLICY</h4>
+                <ul class="space-y-1.5">
+                    <li><a href="#" class="hover:underline">Return Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Use</a></li>
+                    <li><a href="#" class="hover:underline">Security</a></li>
+                    <li><a href="#" class="hover:underline">Privacy</a></li>
+                </ul>
+            </div>
+            <div> -->
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const statusBox = document.getElementById('sentStatus');
+    const senderName = document.getElementById('senderName');
+    const senderEmail = document.getElementById('senderEmail');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      senderName.textContent = document.getElementById('name').value.trim();
+      senderEmail.textContent = document.getElementById('email').value.trim();
+      form.classList.add('hidden');
+      statusBox.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
